@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import Container from './components/container'
 import Row from './components/Row'
+import RTKQueryCategories from './pages/RTK-Query/RTKQCategories'
+import AxiosCategories from './pages/Axios/AxiosCategories copy'
+import FetchCategories from './pages/Fetch/FetchCategories'
 
 function App() {
 
@@ -15,6 +18,9 @@ function App() {
         <Row>
           <Routes>
            <Route path='/' element={<HomePage />} />
+           <Route path='/fetch-categories' element={<FetchCategories />} />
+           <Route path='/rtk-query-categories' element={<RTKQueryCategories />} />
+           <Route path='/axios-categories' element={<AxiosCategories />} />           
           </Routes>
        </Row>
       </Container>
