@@ -8,8 +8,8 @@ import AxiosCategories from './pages/Axios/AxiosCategories copy'
 import FetchCategories from './pages/Fetch/FetchCategories'
 
 function App() {
-
-
+const API_URL = import.meta.env.VITE_API_URL;
+console.log("API_URL",API_URL)
   return (
     <>
       <Navbar />
