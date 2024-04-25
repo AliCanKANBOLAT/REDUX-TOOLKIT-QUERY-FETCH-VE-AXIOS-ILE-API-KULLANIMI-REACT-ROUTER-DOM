@@ -1,11 +1,23 @@
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import HomePage from './pages/HomePage'
+import Container from './components/container'
+import Row from './components/Row'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <h1>App</h1>
+      <Navbar />
+      <hr />
+      <Container className="mt-4">
+        <Row>
+          <Routes>
+           <Route path='/' element={<HomePage />} />
+          </Routes>
+       </Row>
+      </Container>
     </>
   )
 }
