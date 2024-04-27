@@ -16,7 +16,7 @@ export default function useCategoryFetchApi(categoryName) {
         "x-api-key": KEY
       }
     }
-    const response = await fetch(`${URL}/images/search?limit=10&breed_ids=beng&${categoryName}`,
+    const response = await fetch(`${URL}/images/search?limit=10&breed_ids=${categoryName}`,
     fetchInfo 
     )
     const Jresponse = await response.json();
@@ -25,9 +25,9 @@ export default function useCategoryFetchApi(categoryName) {
       setError("veri alinamadi...")
       throw new Error("data couldn't get from server...")
     }
-    setData(Jresponse);
+    setData(Jresponse)
     setIsLoading(false)
-    console.log(Jresponse)
+
   }
 
   useEffect(() => {
