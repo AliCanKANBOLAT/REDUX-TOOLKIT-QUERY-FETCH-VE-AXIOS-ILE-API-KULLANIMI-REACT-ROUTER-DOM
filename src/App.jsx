@@ -9,6 +9,10 @@ import FetchCategories from './pages/Fetch/FetchCategories'
 
 function App() {
 
+  
+
+
+
   return (
     <>
       <Navbar />
