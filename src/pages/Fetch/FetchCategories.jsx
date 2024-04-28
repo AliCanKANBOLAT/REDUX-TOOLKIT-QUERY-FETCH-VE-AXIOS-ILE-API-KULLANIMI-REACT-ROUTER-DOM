@@ -11,7 +11,7 @@ export default function FetchCategories() {
       <h1>Fetch : Kategoriler</h1>
       {isError ? <h2>{error}</h2> : (isLoading ? <LoadingComponent /> : (
         <ul className="list-group">
-          {data && data.map(item => (
+          {data.map(item => (
             <li className="list-group-item" key={item.id}>
               <Link to={`/fetch-category/${item.id}`}> {item.name} </Link>
             </li>

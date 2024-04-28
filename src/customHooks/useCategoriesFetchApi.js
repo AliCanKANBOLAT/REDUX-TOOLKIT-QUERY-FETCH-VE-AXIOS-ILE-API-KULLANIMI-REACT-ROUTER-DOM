@@ -24,9 +24,9 @@ export default function useCategoriesFetchApi() {
   }
 
   useEffect(() => {
-    setTimeout(() => {
+    
       getApiData()
-    }, 1500);
+    
   }, [])
   return [data, isLoading, isError, error]
 }
