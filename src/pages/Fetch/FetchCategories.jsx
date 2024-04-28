@@ -1,3 +1,6 @@
+//FETCH CATEGORİES.JSX
+
+
 import LoadingComponent from "../../components/LoadingComponent";
 import useCategoriesFetchApi from "../../customHooks/useCategoriesFetchApi";
 import { Link} from "react-router-dom";

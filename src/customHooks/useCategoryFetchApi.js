@@ -1,3 +1,5 @@
+//useCategoryFetchApi.js
+
 import { useEffect, useState } from "react"
 
 
@@ -5,7 +7,6 @@ const URL = import.meta.env.VITE_CAT_API_URL
 const KEY = import.meta.env.VITE_CAT_API_KEY
 
 export default function useCategoryFetchApi(categoryName) {
-  console.log("cat name::::",categoryName)
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
