@@ -9,7 +9,7 @@
   export default function FetchCategory() {
     const { categoryName } = useParams();
     const [data, isLoading, isError, error] = useCategoryFetchApi(categoryName)
-    console.log("DATAS::::", categoryName)
+
       
 
     return (
