@@ -7,7 +7,8 @@ import FetchCategories from "./pages/Fetch/FetchCategories"
 import FetchCategory from "./pages/Fetch/FetchCategory"
 import AxiosCategory from "./pages/Axios/AxiosCategory"
 import AxiosCategories from "./pages/Axios/AxiosCategories"
-import RTKQueryCategories from "./pages/RTK-Query/RTKQCategories"
+import RTKQueryCategories from "./pages/RTK-Query/RTKQueryCategories"
+import RTKQueryCategory from "./pages/RTK-Query/RTKQueryCategory"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/axios-categories" element={<AxiosCategories />} />
             <Route path="/axios-category/:categoryName" element={<AxiosCategory />} />
             <Route path="/rtk-query-categories" element={<RTKQueryCategories />} />
+            <Route path="/rtk-query-category/:categoryName" element={<RTKQueryCategory />} />
           </Routes>
         </Row>
       </Container>
